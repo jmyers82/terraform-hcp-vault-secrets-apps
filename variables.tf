@@ -19,9 +19,11 @@ variable "app_name" {
     error_message = "The app name must contain only alphanumeric characters and dashes"
   }
   validation {
-    condition     = can(regex("^[a-zA-Z]$", var.app_name))
-    error_message = "The app name must start with an alphanumeric character"
+    condition     = can(regex("^[a-zA-Z].$", var.app_name))
+    error_message = "The app name must start with an alpha character"
   }
+
+
 
 }
 
