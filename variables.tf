@@ -22,9 +22,6 @@ variable "app_name" {
     condition     = can(regex("^[a-zA-Z].$", var.app_name))
     error_message = "The app name must start with an alpha character"
   }
-
-
-
 }
 
 variable "description" {
