@@ -43,3 +43,9 @@ variable "project_id" {
   description = "The project id for the vault secrets app"
   default     = null
 }
+
+variable "tfe_organization" {
+  type        = string
+  description = "The Terraform Cloud organization name"
+  default = "hashiconf22"  
+}
