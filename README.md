@@ -35,4 +35,5 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_app_resource_name"></a> [app\_resource\_name](#output\_app\_resource\_name) | n/a |
+| <a name="output_spn_name"></a> [spn\_name](#output\_spn\_name) | n/a |
 <!-- END_TF_DOCS -->
