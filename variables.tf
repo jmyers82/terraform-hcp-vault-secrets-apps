@@ -38,10 +38,9 @@ variable "description" {
   }
 }
 
-variable "project_id" {
+variable "project_name" {
   type        = string
-  description = "The project id for the vault secrets app"
-  default     = null
+  description = "The hcp project name for the vault secrets app"
 }
 
 variable "tfe_organization" {
