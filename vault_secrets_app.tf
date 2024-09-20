@@ -2,7 +2,7 @@
 resource "hcp_vault_secrets_app" "secrets_app" {
   app_name    = var.app_name
   description = var.description
-  project_id  = lower("project/${var.project_name}")
+  # project_id  = lower("project/${var.project_name}")
 }
 
 
