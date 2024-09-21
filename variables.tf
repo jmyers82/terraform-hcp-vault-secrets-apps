@@ -46,5 +46,5 @@ variable "project_name" {
 variable "tfe_organization" {
   type        = string
   description = "The Terraform Cloud organization name"
-  default = "hashiconf22"  
+  default     = "hashiconf22"
 }
