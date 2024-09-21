@@ -8,7 +8,7 @@ resource "hcp_vault_secrets_app" "secrets_app" {
 #################### App Secret Reader Role ####################
 # hcp service principal for vault secrets
 resource "hcp_service_principal" "vault_secrets_svc_principal_reader" {
-  name = "vault-secrets-${var.app_name}-reader"
+  name = "vs-${var.app_name}-reader"
 }
 
 # hcp vault secret app iam binding
@@ -23,7 +23,7 @@ resource "hcp_vault_secrets_app_iam_binding" "secrets_app_iam_binding_reader" {
 ##################### App Secret Creator #####################
 # hcp service principal for vault secrets
 resource "hcp_service_principal" "vault_secrets_svc_principal_creator" {
-  name = "vault-secrets-${var.app_name}-manager"
+  name = "vs-${var.app_name}-mgr"
 }
 
 # hcp vault secret app iam binding
