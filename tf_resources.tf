@@ -5,7 +5,7 @@ resource "tfe_project" "app_specific" {
 
 resource "tfe_variable_set" "app_specific_var_set" {
   name         = lower("${var.app_name}-app-mgr")
-  description  = "Auth Vars for ${var.project_name} vault secrets app."
+  description  = "Auth Vars for ${var.app_name} vault secrets app."
   organization = var.tfe_organization
 }
 
@@ -45,3 +45,11 @@ resource "tfe_variable" "app_specific__id" {
   description     = "PROJECT_ID"
   variable_set_id = tfe_variable_set.app_specific_var_set.id
 }
+
+# resource "tfe_variable" "app_specific_tfe_id" {
+#   key             = "TFE_TOKEN"
+#   value           = var.TFE_TOKEN_TFE
+#   category        = "env"
+#   description     = "TFE_TOKEN - hashiconf22"
+#   variable_set_id = tfe_variable_set.app_specific_var_set.id
+# }
