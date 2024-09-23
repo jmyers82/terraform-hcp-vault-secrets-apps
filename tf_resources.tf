@@ -1,10 +1,10 @@
 resource "tfe_project" "app_specific" {
   organization = var.tfe_organization
-  name         = lower("${var.app_name}-app-mgr")
+  name         = lower("${var.app_name}-app")
 }
 
 resource "tfe_variable_set" "app_specific_var_set" {
-  name         = lower("${var.app_name}-app-mgr")
+  name         = lower("${var.app_name}-app")
   description  = "Auth Vars for ${var.app_name} vault secrets app."
   organization = var.tfe_organization
 }
