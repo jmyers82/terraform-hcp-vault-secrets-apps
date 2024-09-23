@@ -46,10 +46,10 @@ resource "tfe_variable" "app_specific__id" {
   variable_set_id = tfe_variable_set.app_specific_var_set.id
 }
 
-resource "tfe_variable" "app_specific_tfe_id" {
-  key             = "TFE_TOKEN"
-  value           = var.TFE_TOKEN_TFE
-  category        = "env"
-  description     = "TFE_TOKEN - hashiconf22"
-  variable_set_id = tfe_variable_set.app_specific_var_set.id
-}
+# resource "tfe_variable" "app_specific_tfe_id" {
+#   key             = "TFE_TOKEN"
+#   value           = var.TFE_TOKEN_TFE
+#   category        = "env"
+#   description     = "TFE_TOKEN - hashiconf22"
+#   variable_set_id = tfe_variable_set.app_specific_var_set.id
+# }
